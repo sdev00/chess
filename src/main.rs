@@ -1,3 +1,9 @@
+// #[macro_use]
+extern crate num_derive;
+mod chess;
+use chess::*;
+
 fn main() {
-    println!("Hello, world!");
+    let board = Board::default();
+    println!("{}", board);
 }
